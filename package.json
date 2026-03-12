@@ -1,0 +1,26 @@
+{
+  "name": "dzign-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "clean": "pnpm -r clean && rimraf node_modules",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "preview": "pnpm -r preview",
+    "generate:api-client": "pnpm --filter api-client generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.3",
+  "devDependencies": {
+    "orval": "^7.11.2",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.1.3"
+  }
+}
